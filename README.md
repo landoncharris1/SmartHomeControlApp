@@ -1,4 +1,4 @@
-# SmartHomeControlApp
+# Smart Home Control App
 This is a Flutter application designed to simplify the management of your home devices,It allows users to control their devices through the app, schedule actions, track energy consumption with ease.
 
 # Features:
