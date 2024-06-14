@@ -43,30 +43,47 @@ Run the App:
 # Integrating Arduino via Wi-Fi:
 To enable your Smart Home Control app to communicate with Arduino-controlled devices via Wi-Fi, follow these steps:
    1. Install Arduino IDE
+      
           • Download and install the Arduino IDE from Arduino's official website.
-   2. Set Up Arduino Board (ESP8266)
+   3. Set Up Arduino Board (ESP8266)
+      
           • Connect your Arduino board (e.g., ESP8266) to your computer via USB.
-   3. Upload Arduino Sketch 
+   5. Upload Arduino Sketch
+      
           • Write or download a sketch (program) for Arduino that sets up Wi-Fi connection and controls your devices (e.g., turning relays on/off).
+      
           • Use arduino_setup.dart and modify the sketch according to your specific device control needs.
-   4. Connect Relay Devices
+      https://github.com/landoncharris1/SmartHomeControlApp/blob/main/arduino_setup.dart
+      
+   7. Connect Relay Devices
+      
           • Connect devices (like relays controlling lights and fans) to the defined relay pins (relayPin1 and relayPin2).
-   5. Use Smart Home Control App:
+   9. Use Smart Home Control App:
+       
           • Ensure your Arduino and the Flutter app are connected to the same Wi-Fi network.
-   6. Control Devices
+   11. Control Devices
+       
           • Open the Smart Home Control app or use any web browser on the same network to send GET requests to the Arduino's IP address and specified endpoints (/light/on, /light/off, /fan/on, /fan/off) to control the connected devices.
 
 # Bluetooth Setup:
 To enable Bluetooth communication between your Smart Home Control app and the devices, follow these steps:
 
    1. Connect Bluetooth Module
+      
           • Connect a Bluetooth module (like HC-05) to your Arduino board.
-   2. Upload Blutooth Control Sketch
+   3. Upload Blutooth Control Sketch
+      
           • Write or download a sketch for Arduino that sets up Bluetooth communication and controls your devices (e.g., turning relays on/off).
+      
           • Use bluetooth_setup.dart and modify the sketch according to your specific device control needs. This Arduino sketch focuses on controlling physical devices based on commands received from the Bluetooth module.
-   3. Create the bluetooth_page.dart file and add the code to initiate connetions, send commands, and disconnect from the Arduino
-   4. Create the bluetooth_service.dart fileunder lib/services/ and add the code to handle Bluetooth connections and sending commands to the Arduino device
 
+      https://github.com/landoncharris1/SmartHomeControlApp/blob/main/bluetooth_setup.dart
+      
+   5. Create the bluetooth_page.dart file and add the code to initiate connections, send commands, and disconnect from the Arduino
+https://github.com/landoncharris1/SmartHomeControlApp/blob/main/bluetooth_page.dart
+
+   7. Create the bluetooth_service.dart fileunder lib/services/ and add the code to handle Bluetooth connections and sending commands to the Arduino device  
+https://github.com/landoncharris1/SmartHomeControlApp/blob/main/bluetooth_service.dart
 
 # Explore SmartHomeControl:
 Add, remove, and manage smart home devices.
