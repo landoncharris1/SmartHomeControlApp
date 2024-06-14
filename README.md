@@ -4,11 +4,10 @@ This is a Flutter application designed to simplify the management of your home d
 # Features:
 
 Device Management: Add, remove, and toggle smart home devices.
+
 Scheduling: Create schedules to automate device actions based on time and conditions.
 
 Energy Consumption Tracking: Monitor and track the energy consumption of individual devices and overall energy usage.
-
-Device Groups: Organize devices into groups for easier management and control, enhancing user convenience and promoting better organization within the smart home ecosystem.
 
 Intuitive User Interface: Features a sleek and user-friendly interface, crafted to offer a seamless experience for users of all proficiency levels. Its intuitive design and straightforward navigation ensure effortless control and management of your smart home devices, enhancing the overall user experience.
 
